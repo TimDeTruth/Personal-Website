@@ -1,0 +1,49 @@
+.project {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project h1 {
+  padding-top: 10vh;
+  color: #3e497a;
+  font-size: 35px;
+}
+
+.project img {
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 30%;
+}
+
+.project p {
+  font-size: 1.2em;
+  color: #3e497a;
+}
+
+.project svg {
+  font-size: 60px;
+  color: #3e497a;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 845px) {
+  .project h1 {
+    color: #3e497a;
+    font-size: 35px;
+  }
+}
